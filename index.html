@@ -1,0 +1,1674 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GENETYKA Studio</title>
+<meta name="description" content="GENETYKA studio у Чернівцях і Коломиї: лазерна епіляція, сферотерапія (ендосфера), Emsculpt + RF, крісло Кегеля, вакуумний масаж, мікроголковий RF-ліфтинг. Безкоштовна консультація, запис у Direct або за телефоном.">
+<meta name="theme-color" content="#F6F2E9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F1711" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="uk_UA">
+<meta property="og:site_name" content="GENETYKA">
+<meta property="og:title" content="GENETYKA — лазерна епіляція та корекція фігури">
+<meta property="og:description" content="Лазерна епіляція, ендосфера, Emsculpt + RF, крісло Кегеля, масаж і мікроголковий RF-ліфтинг — GENETYKA studio, Чернівці · Коломия.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="GENETYKA — лазерна епіляція та корекція фігури">
+<meta name="twitter:description" content="Лазерна епіляція, ендосфера, Emsculpt + RF, крісло Кегеля, масаж і мікроголковий RF-ліфтинг — GENETYKA studio, Чернівці · Коломия.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Cinzel:wght@500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* ============ TOKENS ============ */
+  :root{
+    --ink:#18241C;
+    --ink-soft:#435046;
+    --ink-faint:#58635A;
+    --bg:#F6F2E9;
+    --surface:#EDE7DA;
+    --surface-2:#E2DACA;
+    --line:#DAD1BF;
+    --line-strong:#B9AE98;
+    --wine:#233629;
+    --wine-deep:#132018;
+    --wine-tint:#E4E7DC;
+    --accent:#8A6A30;
+    --accent-soft:#E9DDC2;
+    --gold:#B8975C;
+    --gold-soft:#D9C59A;
+    --cream-text:#F6F2E9;
+    --shadow-sm: 0 2px 10px rgba(24,36,28,0.07);
+    --shadow-md: 0 18px 40px -14px rgba(24,36,28,0.24);
+    --shadow-lg: 0 34px 70px -20px rgba(24,36,28,0.34);
+    --shadow-glow: 0 22px 46px -18px color-mix(in srgb, var(--accent) 55%, transparent);
+    --r-card: 32px 32px 32px 8px;
+    --r-card-sm: 22px 22px 22px 6px;
+    --r-pill: 999px;
+    --ease: cubic-bezier(.19,.84,.28,1);
+    --ease-soft: cubic-bezier(.4,0,.2,1);
+    --ease-spring: cubic-bezier(.34,1.4,.4,1);
+    --sp-1:8px; --sp-2:16px; --sp-3:24px; --sp-4:32px;
+    --sp-5:48px; --sp-6:64px; --sp-7:96px; --sp-8:140px;
+    --maxw:1200px;
+    --focus: 2px solid var(--accent);
+  }
+
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ink:#EEE8DA; --ink-soft:#BDB6A6; --ink-faint:#9C9686;
+      --bg:#0F1711; --surface:#162119; --surface-2:#1E2B21;
+      --line:#2B3A2F; --line-strong:#43554A;
+      --wine:#D9BE86; --wine-deep:#EBD8AE; --wine-tint:#1D2A20;
+      --accent:#D4B478; --accent-soft:#33301F;
+      --gold:#CDB07A; --gold-soft:#E3D0A6;
+      --cream-text:#0F1711;
+      --shadow-sm: 0 2px 10px rgba(0,0,0,0.28);
+      --shadow-md: 0 18px 40px -14px rgba(0,0,0,0.5);
+      --shadow-lg: 0 34px 70px -20px rgba(0,0,0,0.55);
+    }
+  }
+  :root[data-theme="dark"]{
+    --ink:#EEE8DA; --ink-soft:#BDB6A6; --ink-faint:#9C9686;
+      --bg:#0F1711; --surface:#162119; --surface-2:#1E2B21;
+      --line:#2B3A2F; --line-strong:#43554A;
+      --wine:#D9BE86; --wine-deep:#EBD8AE; --wine-tint:#1D2A20;
+      --accent:#D4B478; --accent-soft:#33301F;
+      --gold:#CDB07A; --gold-soft:#E3D0A6;
+      --cream-text:#0F1711;
+    --shadow-sm: 0 2px 10px rgba(0,0,0,0.28);
+    --shadow-md: 0 18px 40px -14px rgba(0,0,0,0.5);
+    --shadow-lg: 0 34px 70px -20px rgba(0,0,0,0.55);
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Manrope', sans-serif;
+    font-size:clamp(16px, 0.6vw + 15px, 17.5px);
+    line-height:1.65;
+    letter-spacing:-0.006em;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    overflow-x:hidden;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  h1,h2,h3{
+    font-family:'Cormorant Garamond', Georgia, serif;
+    font-optical-sizing:auto;
+    font-weight:500;
+    margin:0;
+  }
+  h1{letter-spacing:-0.026em;}
+  h2{letter-spacing:-0.02em;}
+  h3{letter-spacing:-0.01em;}
+  p{margin:0;}
+  ul{margin:0;padding:0;list-style:none;}
+  button{font-family:inherit;cursor:pointer;background:none;border:none;color:inherit;appearance:none;-webkit-appearance:none;}
+
+  :focus-visible{outline:var(--focus);outline-offset:4px;border-radius:2px;}
+
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 clamp(20px,4vw,40px);}
+  section[id], #reviews{scroll-margin-top:92px;}
+
+  @media(prefers-reduced-motion: reduce){
+    *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important;}
+  }
+
+  /* ============ HEADER ============ */
+  header{
+    position:sticky; top:env(safe-area-inset-top, 0px); z-index:50;
+    background:color-mix(in srgb, var(--bg) 82%, transparent);
+    backdrop-filter: blur(14px) saturate(1.4);
+    border-bottom:1px solid transparent;
+    transition:border-color .4s var(--ease-soft), box-shadow .4s var(--ease-soft), padding .3s var(--ease-soft);
+  }
+  header.scrolled{
+    border-bottom-color:var(--line);
+    box-shadow:0 8px 24px -16px rgba(26,27,29,0.2);
+  }
+  .nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:20px clamp(20px,4vw,40px);
+    max-width:var(--maxw); margin:0 auto;
+    transition:padding .3s var(--ease-soft);
+  }
+  header.scrolled .nav{padding-top:14px; padding-bottom:14px;}
+  .brand{display:flex; align-items:baseline; gap:10px; text-decoration:none; color:inherit;
+    min-height:44px; padding:10px 0; margin:-10px 0;}
+  .logo-mark{
+    display:block; flex-shrink:0; align-self:center;
+    font-family:'Cinzel', Georgia, serif; font-weight:600;
+    font-size:1.44rem; letter-spacing:-0.01em; color:var(--ink);
+    transition:color .3s var(--ease-soft);
+  }
+  .brand:hover .logo-mark{color:var(--accent);}
+  .logo-sub{
+    font-family:'Manrope', sans-serif; font-size:0.72rem; font-weight:500;
+    letter-spacing:0.05em; color:var(--ink-faint); align-self:center;
+    padding-bottom:1px;
+  }
+  .footer-logo{
+    display:block; margin-bottom:14px;
+    font-family:'Cinzel', Georgia, serif; font-weight:600;
+    font-size:1.5rem; letter-spacing:-0.01em; color:var(--ink-soft);
+  }
+  @media(max-width:420px){ .logo-mark{font-size:1.24rem;} .logo-sub{font-size:0.64rem;} }
+
+  .nav-links{display:none; gap:38px; font-size:0.92rem; font-weight:600; color:var(--ink-soft);}
+  .nav-links button{text-decoration:none; text-align:left; position:relative; padding:6px 0; transition:color .25s var(--ease-soft);}
+  .nav-links button:hover{color:var(--ink);}
+  .nav-links button::after{
+    content:''; position:absolute; left:0; bottom:0; width:0%; height:1.5px;
+    background:var(--accent); transition:width .35s var(--ease);
+  }
+  .nav-links button:hover::after{width:100%;}
+  .nav .nav-cta{display:none;}
+
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:9px;
+    padding:16px 30px; border-radius:var(--r-pill);
+    font-size:0.94rem; font-weight:700; letter-spacing:0.005em;
+    text-decoration:none; border:1px solid transparent;
+    position:relative; overflow:hidden; isolation:isolate;
+    transition:transform .4s var(--ease-spring), box-shadow .4s var(--ease), color .35s ease, border-color .35s ease;
+  }
+  .btn:active{transform:scale(0.96);}
+  .btn-primary{background:var(--wine); color:var(--cream-text); box-shadow:0 14px 30px -12px rgba(26,27,29,0.46);}
+  .btn-primary::before{
+    content:''; position:absolute; inset:0; z-index:-1;
+    background:var(--accent);
+    transform:translateX(-101%);
+    transition:transform .45s var(--ease);
+  }
+  .btn-primary:hover::before{transform:translateX(0);}
+  .btn-primary:hover{transform:translateY(-3px); box-shadow:var(--shadow-glow); color:var(--bg);}
+  .btn-ghost{background:transparent; color:var(--ink); border-color:var(--line-strong);}
+  .btn-ghost:hover{border-color:var(--accent); color:var(--accent); transform:translateY(-3px);}
+  .btn svg{width:15px; height:15px; transition:transform .35s var(--ease-spring);}
+  .btn:hover svg{transform:translateX(4px);}
+
+  .burger{
+    width:44px; height:44px; display:flex; align-items:center; justify-content:center;
+    border:1px solid var(--line-strong); border-radius:50%; transition:border-color .25s ease, background .25s ease, transform .3s var(--ease-spring);
+  }
+  .burger:hover{border-color:var(--accent); background:var(--wine-tint); transform:rotate(90deg);}
+  .burger svg{width:17px; height:17px;}
+
+  /* ============ HERO ============ */
+  .hero{position:relative; padding:clamp(44px,7vw,76px) 0 clamp(64px,9vw,96px); overflow:hidden;}
+  .hero::before{
+    content:''; position:absolute; top:-20%; right:-10%; width:60vw; height:60vw; max-width:820px; max-height:820px;
+    background:radial-gradient(circle, color-mix(in srgb, var(--accent) 14%, transparent) 0%, transparent 68%);
+    z-index:0; pointer-events:none;
+  }
+  .hero-grid{position:relative; z-index:1; display:grid; grid-template-columns:1fr; gap:44px; align-items:center;}
+
+  .eyebrow-city{
+    display:inline-flex; align-items:center; gap:9px;
+    font-size:0.76rem; color:var(--ink-soft); font-weight:700;
+    letter-spacing:0.08em; text-transform:uppercase;
+    margin-bottom:24px; padding:9px 18px 9px 13px;
+    background:var(--surface); border-radius:var(--r-pill);
+  }
+  .eyebrow-city .dot{width:6px; height:6px; border-radius:50%; background:var(--accent); flex-shrink:0;}
+
+  .hero h1{
+    font-size:clamp(2.6rem, 3.6vw + 1.3rem, 4.6rem);
+    line-height:1.04;
+    letter-spacing:-0.026em;
+    color:var(--ink);
+    max-width:17ch;
+  }
+
+  .hero-sub{
+    margin-top:24px; font-size:1.18rem; line-height:1.6;
+    color:var(--ink-soft); max-width:40ch;
+  }
+  .hero-cta-row{margin-top:36px; display:flex; flex-wrap:wrap; align-items:center; gap:22px;}
+  @media(max-width:639px){
+    .hero-cta-row{gap:16px; margin-top:30px;}
+    .hero-cta-row .btn-primary{padding:14px 22px; font-size:0.88rem; gap:7px;}
+    .hero-cta-row .btn-primary svg{width:13px; height:13px;}
+    .hero-quick{gap:10px;}
+    .hero-quick .quick-link{width:42px; height:42px;}
+    .hero-quick .quick-link svg{width:16px; height:16px;}
+  }
+
+  .hero-quick{display:flex; align-items:center; gap:12px;}
+  .hero-quick span{font-size:0.85rem; color:var(--ink-faint); font-weight:600;}
+  .quick-link{
+    width:46px; height:46px; border-radius:50%; border:1px solid var(--line-strong);
+    display:flex; align-items:center; justify-content:center; flex-shrink:0;
+    transition:transform .35s var(--ease-spring), background .3s var(--ease-soft), border-color .3s var(--ease-soft), color .3s var(--ease-soft);
+  }
+  .quick-link svg{width:18px; height:18px;}
+  .quick-link:hover{border-color:var(--accent); background:var(--accent); color:#fff; transform:translateY(-3px) scale(1.05);}
+
+  /* Hero visual: bold, minimalist product composition — no stock imagery */
+  .hero-visual{position:relative; height:clamp(380px,44vw,540px);}
+  .hv-panel{
+    position:absolute; inset:0;
+    border-radius:var(--r-card);
+    background:#1A1B1D;
+    box-shadow:var(--shadow-lg);
+    overflow:hidden;
+    z-index:1;
+    transition:transform .5s var(--ease);
+  }
+  .hero-visual:hover .hv-panel{transform:translateY(-4px);}
+  .hv-photo{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 62%; z-index:1; transition:transform .8s var(--ease);}
+  .hero-visual:hover .hv-photo{transform:scale(1.035);}
+  .hv-scrim{position:absolute; inset:0; z-index:2; background:linear-gradient(to top, rgba(16,17,19,0.72) 0%, rgba(16,17,19,0.28) 34%, rgba(16,17,19,0) 62%);}
+  .hv-caption{
+    position:absolute; left:26px; bottom:26px; right:26px; z-index:3;
+    color:#F7F8F8;
+    text-shadow:0 1px 12px rgba(16,17,19,0.55);
+  }
+  .hv-caption strong{
+    display:block; font-family:'Cormorant Garamond', Georgia, serif; font-optical-sizing:auto; font-style:italic; font-weight:400;
+    font-size:1.14rem; margin-bottom:4px;
+  }
+  .hv-caption span{font-size:0.82rem; opacity:0.72; letter-spacing:0.01em;}
+
+  .hero-anim > *{opacity:0; transform:translateY(16px); animation:heroIn .9s var(--ease) forwards;}
+  .hero-anim > *:nth-child(1){animation-delay:.05s;}
+  .hero-anim > *:nth-child(2){animation-delay:.15s;}
+  .hero-anim > *:nth-child(3){animation-delay:.25s;}
+  .hero-anim > *:nth-child(4){animation-delay:.35s;}
+  .hero-visual{opacity:0; transform:translateY(16px) scale(.98); animation:heroIn 1s var(--ease) forwards; animation-delay:.2s;}
+  .hv-photo{opacity:0; animation:productIn 1.1s var(--ease) forwards; animation-delay:.4s;}
+  @keyframes heroIn{to{opacity:1; transform:none;}}
+  @keyframes productIn{from{opacity:0; transform:translateY(14px) scale(.92);} to{opacity:1; transform:none;}}
+
+  /* ============ SECTION GENERICS ============ */
+  section{padding:clamp(64px,10vw,116px) 0;}
+  .section-head{max-width:640px; margin-bottom:clamp(36px,6vw,68px);}
+  .section-head h2{font-size:clamp(2.1rem, 1.5vw + 1.5rem, 3.1rem); line-height:1.1;}
+  .section-head p{margin-top:18px; color:var(--ink-soft); font-size:1.08rem; line-height:1.6;}
+  .kicker{
+    font-size:0.78rem; color:var(--accent); font-weight:800;
+    letter-spacing:0.09em; text-transform:uppercase;
+    margin-bottom:18px; display:flex; align-items:center; gap:10px;
+  }
+  .kicker::before{content:''; width:22px; height:1.5px; background:var(--accent); display:inline-block;}
+
+  .reveal{opacity:0; transform:translateY(22px); transition:opacity .7s var(--ease-soft), transform .7s var(--ease-soft);}
+  .reveal.in{opacity:1; transform:none;}
+  .reveal-group > *{opacity:0; transform:translateY(18px); transition:opacity .6s var(--ease-soft), transform .6s var(--ease-soft);}
+  .reveal-group.in > *:nth-child(1){transition-delay:.02s;}
+  .reveal-group.in > *:nth-child(2){transition-delay:.08s;}
+  .reveal-group.in > *:nth-child(3){transition-delay:.14s;}
+  .reveal-group.in > *:nth-child(4){transition-delay:.2s;}
+  .reveal-group.in > *:nth-child(5){transition-delay:.26s;}
+  .reveal-group.in > *:nth-child(6){transition-delay:.32s;}
+  .reveal-group.in > *:nth-child(7){transition-delay:.38s;}
+  .reveal-group.in > *:nth-child(8){transition-delay:.44s;}
+  .reveal-group.in > *:nth-child(9){transition-delay:.5s;}
+  .reveal-group.in > *:nth-child(10){transition-delay:.56s;}
+  .reveal-group.in > *{opacity:1; transform:none;}
+
+  /* ============ ADVANTAGES ============ */
+  .advantages-wrap{background:var(--surface); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .adv-grid{display:grid; grid-template-columns:1fr; gap:var(--sp-2);}
+  @media(min-width:640px){ .adv-grid{grid-template-columns:repeat(2,1fr);} }
+  .adv-item{
+    background:var(--bg); border:1px solid var(--line); border-radius:var(--r-card-sm);
+    padding:var(--sp-4); transition:transform .45s var(--ease), box-shadow .45s var(--ease), border-color .45s var(--ease);
+  }
+  .adv-item:hover{transform:translateY(-6px); box-shadow:var(--shadow-glow); border-color:transparent;}
+  .adv-icon{
+    width:46px; height:46px; border-radius:50%; background:var(--wine-tint); color:var(--wine);
+    display:flex; align-items:center; justify-content:center; margin-bottom:22px;
+    transition:transform .45s var(--ease-spring), background .35s var(--ease-soft), color .35s var(--ease-soft);
+  }
+  .adv-item:hover .adv-icon{background:var(--accent); color:#fff; transform:rotate(-8deg) scale(1.08);}
+  .adv-icon svg{width:19px; height:19px;}
+  .adv-item h3{font-size:1.18rem; font-weight:500; margin-bottom:11px;}
+  .adv-item p{color:var(--ink-soft); font-size:0.96rem; line-height:1.55;}
+
+  /* ============ SERVICES ============ */
+  .service-tabs{display:flex; flex-wrap:nowrap; gap:10px; margin-bottom:var(--sp-5); overflow-x:auto; scrollbar-width:none; -webkit-overflow-scrolling:touch; padding-bottom:4px;}
+  .service-tabs::-webkit-scrollbar{display:none;}
+  .tab-btn{
+    padding:11px 21px; border-radius:999px; border:1px solid var(--line-strong);
+    color:var(--ink-soft); font-size:0.85rem; font-weight:700; white-space:nowrap; flex-shrink:0;
+    transition:transform .3s var(--ease-spring), border-color .3s var(--ease-soft), color .3s var(--ease-soft), background .3s var(--ease-soft), box-shadow .3s var(--ease-soft);
+  }
+  .tab-btn:hover{border-color:var(--accent); color:var(--accent); transform:translateY(-2px);}
+  .tab-btn.active{background:var(--wine); border-color:var(--wine); color:var(--cream-text); box-shadow:0 10px 22px -10px rgba(26,27,29,0.42); transform:none;}
+
+  .services-grid{display:grid; grid-template-columns:1fr; gap:26px;}
+
+  .service-card{
+    border:1px solid var(--line); border-radius:var(--r-card-sm);
+    background:var(--bg); overflow:hidden;
+    display:none; flex-direction:column;
+    transition:transform .45s var(--ease), box-shadow .45s var(--ease), border-color .45s var(--ease);
+  }
+  .service-card.show{display:flex;}
+  .service-card:hover{transform:translateY(-6px); box-shadow:var(--shadow-glow); border-color:transparent;}
+
+  /* card media — textured, editorial placeholder art; swap <svg> for a real <img> per card when photos land */
+  .sc-media{position:relative; aspect-ratio:4/3; overflow:hidden; flex-shrink:0; background:#1A1B1D;}
+  .sc-media svg{width:100%; height:100%; display:block; transition:transform .8s var(--ease);}
+  .service-card:hover .sc-media svg{transform:scale(1.035);}
+  .sc-media::after{
+    content:''; position:absolute; inset:0; pointer-events:none; opacity:0.5; mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='matrix' values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.4 0'/></filter><rect width='180' height='180' filter='url(%23n)'/></svg>");
+  }
+  .sc-tag{
+    position:absolute; top:14px; left:14px; z-index:2;
+    background:color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter:blur(6px);
+    color:var(--ink-soft); font-size:0.72rem; font-weight:800; letter-spacing:0.04em; text-transform:uppercase;
+    padding:6px 13px; border-radius:999px; border:1px solid var(--line);
+  }
+
+  .sc-body{padding:26px 26px 28px; display:flex; flex-direction:column; flex:1;}
+  .service-card h3{font-size:1.24rem; font-weight:500; margin-bottom:10px; letter-spacing:-0.008em;}
+  .service-card p{color:var(--ink-soft); font-size:0.94rem; line-height:1.58; margin-bottom:22px;}
+
+  .sc-foot{
+    margin-top:auto; display:flex; align-items:center; justify-content:space-between;
+    gap:14px; padding-top:20px; border-top:1px solid var(--line);
+  }
+  .sc-price{line-height:1.2;}
+  .sc-price em{display:block; font-style:normal; font-size:0.72rem; color:var(--ink-faint); margin-bottom:3px; text-transform:uppercase; letter-spacing:0.04em;}
+  .sc-price strong{font-family:'Cormorant Garamond', Georgia, serif; font-optical-sizing:auto; font-size:1.36rem; font-weight:500; color:var(--ink); white-space:nowrap;}
+  .sc-btn{
+    display:inline-flex; align-items:center; gap:7px;
+    padding:11px 19px; border-radius:999px;
+    background:var(--wine-tint); color:var(--wine);
+    font-size:0.85rem; font-weight:700; text-decoration:none; white-space:nowrap;
+    transition:background .3s var(--ease-soft), color .3s var(--ease-soft);
+  }
+  .sc-btn svg{width:13px; height:13px; transition:transform .3s var(--ease-spring);}
+  .sc-btn:hover{background:var(--accent); color:#fff;}
+  .sc-btn:hover svg{transform:translateX(3px);}
+
+  /* mobile: swipeable, snap-scrolling row — one card settles per swipe */
+  @media(max-width:639px){
+    .services-grid{
+      display:flex; gap:14px;
+      overflow-x:auto; scroll-snap-type:x mandatory;
+      -webkit-overflow-scrolling:touch; scrollbar-width:none;
+      margin:0 calc(clamp(20px,4vw,40px) * -1);
+      padding:4px clamp(20px,4vw,40px) 10px;
+    }
+    .services-grid::-webkit-scrollbar{display:none;}
+    .services-grid:focus{outline:none;}
+    .services-grid:focus-visible{outline:var(--focus); outline-offset:6px;}
+    .service-card{flex:0 0 80%; scroll-snap-align:start; scroll-snap-stop:always;}
+    .service-card:hover{transform:none;}
+    .sc-hint{display:flex;}
+  }
+  .sc-hint{
+    display:none; align-items:center; gap:8px;
+    margin-top:16px; font-size:0.82rem; color:var(--ink-faint);
+  }
+  .sc-hint svg{width:14px; height:14px; animation:hintNudge 1.8s ease-in-out infinite;}
+  @keyframes hintNudge{0%,100%{transform:translateX(0);} 50%{transform:translateX(4px);}}
+  .sc-note{margin-top:24px; font-size:0.86rem; color:var(--ink-faint); max-width:70ch; line-height:1.55;}
+
+  @media(min-width:640px){ .services-grid{grid-template-columns:repeat(2,1fr);} }
+  @media(min-width:960px){ .services-grid{grid-template-columns:repeat(3,1fr);} }
+
+  /* ============ PROCESS ============ */
+  .steps{display:grid; grid-template-columns:1fr; gap:0; position:relative;}
+  .steps::before{content:''; position:absolute; left:26px; top:10px; bottom:10px; width:1px; background:var(--line);}
+  .step{
+    display:grid; grid-template-columns:52px 1fr; gap:24px;
+    padding:22px 0; position:relative;
+  }
+  .step-index{
+    position:relative; z-index:1; width:52px; height:52px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    background:var(--bg); border:1.5px solid var(--line-strong);
+    font-family:'Cormorant Garamond', Georgia, serif; font-optical-sizing:auto; font-style:italic; font-size:1.32rem; color:var(--wine);
+    transition:background .4s var(--ease-soft), border-color .4s var(--ease-soft), color .4s var(--ease-soft), transform .4s var(--ease-spring);
+  }
+  .step:hover .step-index{background:var(--accent); border-color:var(--accent); color:#fff; transform:scale(1.08);}
+  /* text column shifts on its own via transform (no layout reflow) so the circle
+     never drifts off the timeline's ::before line, which is positioned against .steps */
+  .step > div:last-child{padding-top:6px; transition:transform .4s var(--ease-soft);}
+  .step:hover > div:last-child{transform:translateX(8px);}
+  .step h3{font-size:1.17rem; font-weight:500; margin-bottom:8px;}
+  .step p{color:var(--ink-soft); font-size:0.98rem; line-height:1.55; max-width:56ch;}
+
+  /* ============ TEAM ============ */
+  .team-grid{display:grid; grid-template-columns:1fr; gap:var(--sp-2);}
+  @media(min-width:640px){ .team-grid{grid-template-columns:repeat(2,1fr);} }
+  @media(min-width:1040px){ .team-grid{grid-template-columns:repeat(3,1fr);} }
+  .team-card{
+    display:flex; align-items:flex-start; gap:16px;
+    background:var(--bg); border:1px solid var(--line); border-radius:var(--r-card-sm);
+    padding:24px; text-decoration:none; color:inherit;
+    transition:transform .4s var(--ease), box-shadow .4s var(--ease), border-color .4s var(--ease);
+  }
+  .team-card:hover{transform:translateY(-5px); box-shadow:var(--shadow-glow); border-color:transparent;}
+  .team-avatar{
+    width:52px; height:52px; border-radius:50%; flex-shrink:0;
+    background:var(--wine-tint); color:var(--wine);
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Cormorant Garamond', Georgia, serif; font-optical-sizing:auto; font-style:italic; font-weight:600; font-size:1.22rem;
+    transition:background .35s var(--ease-soft), color .35s var(--ease-soft);
+  }
+  .team-card:hover .team-avatar{background:var(--accent); color:#fff;}
+  .team-info{min-width:0;}
+  .team-name{font-family:'Cormorant Garamond', Georgia, serif; font-optical-sizing:auto; font-size:1.1rem; font-weight:500; margin-bottom:4px;}
+  .team-role{color:var(--ink-soft); font-size:0.87rem; line-height:1.45; margin-bottom:8px;}
+  .team-handle{display:inline-flex; align-items:center; gap:5px; font-size:0.82rem; font-weight:700; color:var(--accent);}
+  .team-handle svg{width:13px; height:13px; flex-shrink:0;}
+
+  /* ============ FAQ ============ */
+  .faq-list{border-bottom:1px solid var(--line);}
+  .faq-item{border-top:1px solid var(--line); transition:background .35s ease;}
+  .faq-item.open{background:var(--surface);}
+  .faq-q{
+    width:100%; padding:27px 18px 27px 4px; display:flex; justify-content:space-between; align-items:center; gap:16px;
+    text-align:left; font-family:'Cormorant Garamond', Georgia, serif; font-optical-sizing:auto; font-size:1.15rem; font-weight:500; color:var(--ink);
+    transition:color .3s var(--ease-soft), padding .3s var(--ease-soft);
+  }
+  .faq-item:hover .faq-q, .faq-item.open .faq-q{color:var(--accent);}
+  .faq-item.open .faq-q{padding-left:18px;}
+  .faq-plus{
+    flex-shrink:0; width:32px; height:32px; border-radius:50%; border:1px solid var(--line-strong);
+    position:relative; transition:transform .45s var(--ease-spring), border-color .35s ease, background .35s ease;
+  }
+  .faq-plus::before, .faq-plus::after{content:''; position:absolute; background:var(--ink); top:50%; left:50%; transform:translate(-50%,-50%); transition:background .3s ease;}
+  .faq-plus::before{width:11px; height:1.4px;}
+  .faq-plus::after{width:1.4px; height:11px; transition:opacity .3s ease;}
+  .faq-item.open .faq-plus{transform:rotate(135deg); border-color:var(--accent); background:var(--accent);}
+  .faq-item.open .faq-plus::before, .faq-item.open .faq-plus::after{background:#fff;}
+  .faq-a{max-height:0; overflow:hidden; transition:max-height .5s var(--ease);}
+  .faq-a p{padding:0 18px 28px 22px; color:var(--ink-soft); font-size:0.98rem; line-height:1.62; max-width:64ch;}
+
+  /* ============ CONTACTS ============ */
+  .contacts-grid{display:grid; grid-template-columns:1fr; gap:var(--sp-4);}
+  .contact-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--r-card); padding:var(--sp-4);}
+  .contact-row{display:flex; gap:16px; padding:19px 0; border-top:1px solid var(--line); align-items:center;}
+  .contact-row:first-child{border-top:none; padding-top:0;}
+  .contact-row .ci{
+    width:42px; height:42px; border-radius:50%; background:var(--bg); color:var(--wine);
+    display:flex; align-items:center; justify-content:center; flex-shrink:0;
+    transition:transform .35s var(--ease-spring), background .3s var(--ease-soft), color .3s var(--ease-soft);
+  }
+  .contact-row:hover .ci{background:var(--accent); color:#fff; transform:scale(1.08);}
+  .contact-row .ci svg{width:17px; height:17px;}
+  .contact-row .cl-label{font-size:0.78rem; color:var(--ink-faint); margin-bottom:4px; text-transform:uppercase; letter-spacing:0.04em;}
+  .contact-row .cl-value{font-size:1.04rem; font-weight:700; display:inline-block; text-decoration:none; color:inherit; transition:color .25s var(--ease-soft);}
+  a.cl-value{padding:11px 0; margin:-11px 0; min-height:44px; display:flex; align-items:center;}
+  a.cl-value:hover{color:var(--accent);}
+  .contact-socials{display:flex; gap:11px; margin-top:28px;}
+  .soc{
+    width:46px; height:46px; border-radius:50%; border:1px solid var(--line-strong);
+    display:flex; align-items:center; justify-content:center; transition:transform .35s var(--ease-spring), background .3s var(--ease-soft), border-color .3s var(--ease-soft), color .3s var(--ease-soft);
+  }
+  .soc:hover{border-color:var(--accent); background:var(--accent); color:#fff; transform:translateY(-4px) scale(1.05);}
+  .soc svg{width:17px; height:17px;}
+
+  .map-card{
+    display:block; border-radius:var(--r-card); border:1px solid var(--line);
+    overflow:hidden; min-height:300px; position:relative; text-decoration:none; color:inherit;
+    background-color:var(--surface);
+    background-image:
+      linear-gradient(color-mix(in srgb, var(--ink) 6%, transparent) 1px, transparent 1px),
+      linear-gradient(90deg, color-mix(in srgb, var(--ink) 6%, transparent) 1px, transparent 1px),
+      radial-gradient(circle at 32% 32%, var(--surface-2), transparent 55%);
+    background-size:34px 34px, 34px 34px, 100% 100%;
+    transition:border-color .3s var(--ease-soft), box-shadow .3s var(--ease-soft);
+  }
+  .map-card:hover{border-color:var(--line-strong); box-shadow:var(--shadow-md);}
+  .map-open{
+    position:absolute; left:50%; bottom:22px; transform:translateX(-50%); z-index:2;
+    display:inline-flex; align-items:center; gap:8px; white-space:nowrap;
+    font-size:0.84rem; font-weight:700; color:var(--wine);
+    background:var(--bg); border:1px solid var(--line-strong);
+    padding:11px 20px; border-radius:999px;
+    transition:background .3s var(--ease-soft), color .3s var(--ease-soft), transform .3s var(--ease-spring);
+  }
+  .map-open svg{width:14px; height:14px;}
+  .map-card:hover .map-open{background:var(--accent); color:#fff; border-color:var(--accent); transform:translateX(-50%) translateY(-2px);}
+  .map-pin{display:flex; position:absolute; top:50%; left:50%; transform:translate(-50%,-100%); display:flex; flex-direction:column; align-items:center;}
+  .map-pin .dot{display:block; width:16px; height:16px; border-radius:50%; background:var(--accent); border:4px solid var(--bg); box-shadow:0 6px 14px rgba(0,0,0,0.22);}
+  .map-pin .pulse{display:block; position:absolute; top:0; left:50%; width:16px; height:16px; border-radius:50%; background:var(--accent); transform:translateX(-50%); animation:pulse 2.6s var(--ease-soft) infinite;}
+  @keyframes pulse{0%{opacity:.55; transform:translateX(-50%) scale(1);} 100%{opacity:0; transform:translateX(-50%) scale(2.8);}}
+  .map-pin > span:last-child{display:block; margin-top:10px; font-size:0.85rem; font-weight:700; background:var(--bg); padding:6px 14px; border-radius:999px; border:1px solid var(--line); white-space:nowrap;}
+
+  .final-cta{text-align:center; padding-top:var(--sp-3);}
+  .final-cta h2{font-size:clamp(2.2rem,4.4vw,3.4rem); max-width:16ch; margin:0 auto 28px;}
+  .final-cta-actions{display:flex; flex-wrap:wrap; gap:14px; justify-content:center;}
+  .final-cta .btn{padding:18px 40px; font-size:1.02rem;}
+
+  footer{border-top:1px solid var(--line); padding:40px 0;}
+  .footer-row{display:flex; flex-direction:column; gap:16px; font-size:0.83rem; color:var(--ink-faint); line-height:1.6;}
+  .footer-row > div:last-child{font-weight:600; color:var(--ink-soft);}
+
+  @media(min-width:860px){
+    .hero-grid{grid-template-columns:1.05fr 0.95fr; gap:72px;}
+    .contacts-grid{grid-template-columns:1fr 1fr;}
+    .footer-row{flex-direction:row; justify-content:space-between; align-items:center;}
+  }
+  /* the bold wordmark is wider than the old serif logo, so the full desktop
+     nav (logo + 5 links + CTA) needs more room before it fits on one line without
+     the flex row shrinking links into a wrap — burger mode covers everything below this */
+  @media(min-width:1040px){
+    .nav-links{display:flex;}
+    .nav .nav-cta{display:inline-flex;}
+    .burger{display:none;}
+  }
+  @media(min-width:1100px){ .adv-grid{grid-template-columns:repeat(4,1fr);} }
+
+  @media(max-width:859px){
+    /* portrait shot: give it the room to be read, not a 300px slice */
+    .hero-visual{height:auto; aspect-ratio:5/6; max-height:66vh;}
+    .hv-photo{object-position:50% 50%;}
+  }
+  @media(max-width:859px) and (max-height:680px){
+    .hero-visual{aspect-ratio:auto; height:58vh; min-height:300px;}
+    .hv-photo{object-position:50% 58%;}
+  }
+
+  /* ============ PHONE TOAST ============ */
+  .toast{
+    position:fixed; left:50%; bottom:24px; transform:translate(-50%,16px);
+    z-index:200; max-width:calc(100% - 40px);
+    display:flex; align-items:center; gap:12px;
+    padding:14px 20px; border-radius:999px;
+    background:var(--ink); color:var(--bg);
+    font-size:0.92rem; font-weight:700; white-space:nowrap;
+    box-shadow:var(--shadow-md);
+    opacity:0; pointer-events:none;
+    transition:opacity .3s var(--ease-soft), transform .3s var(--ease-soft);
+  }
+  .toast.show{opacity:1; transform:translate(-50%,0); pointer-events:auto;}
+  .toast a{color:inherit; text-decoration:none;}
+  .toast small{font-weight:600; opacity:0.7; font-size:0.8rem;}
+
+  /* ============ MOBILE MENU ============ */
+  .mobile-menu{
+    position:fixed; inset:0; background:var(--bg); z-index:100;
+    display:flex; flex-direction:column; padding:24px;
+    overflow-y:auto; -webkit-overflow-scrolling:touch;
+    transform:translateX(100%); visibility:hidden; pointer-events:none;
+    transition:transform .45s var(--ease), visibility 0s linear .45s;
+  }
+  .mobile-menu.open{transform:translateX(0); visibility:visible; pointer-events:auto; transition:transform .45s var(--ease), visibility 0s;}
+  body.menu-open{overflow:hidden;}
+  .mobile-menu .mm-top{display:flex; justify-content:space-between; align-items:center; margin-bottom:52px;}
+  .mobile-menu button:not(.btn):not(.burger){
+    text-decoration:none; text-align:left; width:100%; font-family:'Cormorant Garamond', Georgia, serif; font-optical-sizing:auto; font-style:italic;
+    font-size:clamp(1.5rem,7vw,1.9rem); color:var(--ink);
+    padding:16px 0; border-bottom:1px solid var(--line);
+    transition:color .3s var(--ease-soft), padding-left .3s var(--ease-soft);
+  }
+  .mobile-menu button:not(.btn):not(.burger):hover{color:var(--accent); padding-left:6px;}
+  .mobile-menu button:not(.burger){opacity:0; transform:translateX(18px); transition:opacity .45s var(--ease-soft), transform .45s var(--ease-soft);}
+  .mobile-menu.open button:not(.burger){opacity:1; transform:none;}
+  .mobile-menu.open button:nth-child(2){transition-delay:.08s;}
+  .mobile-menu.open button:nth-child(3){transition-delay:.13s;}
+  .mobile-menu.open button:nth-child(4){transition-delay:.18s;}
+  .mobile-menu.open button:nth-child(5){transition-delay:.23s;}
+  .mobile-menu.open button:nth-child(6){transition-delay:.28s;}
+  .mobile-menu.open button:nth-child(7){transition-delay:.33s;}
+  .mobile-menu.open button:nth-child(8){transition-delay:.38s;}
+  .mobile-menu .btn{margin-top:36px; align-self:flex-start;}
+
+  /* ============ GENETYKA additions ============ */
+  h1,h2,h3{font-weight:600;}
+  .hero h1{letter-spacing:-0.012em; line-height:1.02;}
+  .logo-img{width:40px; height:40px; border-radius:10px; object-fit:cover; flex-shrink:0; align-self:center;
+    box-shadow:0 0 0 1px color-mix(in srgb, var(--gold) 55%, transparent);}
+  .brand{align-items:center;}
+  .logo-mark{letter-spacing:0.14em; font-size:1.2rem;}
+  .footer-logo{letter-spacing:0.14em; display:flex; align-items:center; gap:10px;}
+  .footer-logo .logo-img{width:34px; height:34px;}
+  @media(max-width:420px){ .logo-mark{font-size:1.04rem;} .logo-img{width:34px; height:34px;} }
+  .sc-list{margin:-6px 0 22px; padding:0; list-style:none; font-size:0.86rem; line-height:1.4;}
+  .sc-list li{display:flex; justify-content:space-between; align-items:baseline; gap:12px; padding:7px 0; border-bottom:1px dashed var(--line);}
+  .sc-list li:last-child{border-bottom:none;}
+  .sc-list li span{color:var(--ink-soft);}
+  .sc-list li b{font-weight:700; white-space:nowrap; color:var(--ink);}
+  .sc-list li s{color:var(--ink-faint); font-weight:500; margin-right:6px; font-size:0.8rem;}
+  .sc-list li.sc-gift span{color:var(--accent); font-weight:700;}
+  .service-card p{margin-bottom:16px !important;}
+  .sc-tag{font-size:0.75rem !important;}
+  .sc-price em{font-size:0.75rem !important;}
+  .tab-btn, .sc-btn{min-height:44px;}
+  .team-handle{color:var(--accent);}
+  .final-cta{margin-top:var(--sp-6);}
+  .final-cta h2{line-height:1.08; text-wrap:balance;}
+  .section-head h2{text-wrap:balance;}
+  .rules-grid{display:grid; grid-template-columns:1fr; gap:var(--sp-2);}
+  @media(min-width:760px){ .rules-grid{grid-template-columns:repeat(2,1fr);} }
+  .rule-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--r-card-sm); padding:28px 28px 30px;
+    transition:transform .4s var(--ease), box-shadow .4s var(--ease), border-color .3s ease;}
+  .rule-card:hover{transform:translateY(-4px); box-shadow:var(--shadow-md); border-color:transparent;}
+  .rule-card h3{font-size:1.32rem; margin-bottom:12px; display:flex; align-items:center; gap:12px;}
+  .rule-card h3 i{font-style:normal; width:30px; height:30px; flex-shrink:0; border-radius:50%; background:var(--wine); color:var(--cream-text);
+    font-family:'Manrope', sans-serif; font-size:0.8rem; font-weight:800; display:flex; align-items:center; justify-content:center;}
+  .rule-card p{color:var(--ink-soft); font-size:0.96rem; line-height:1.6;}
+  .rule-card p + p{margin-top:8px;}
+  .rule-card strong{color:var(--ink);}
+  .rules-note{margin-top:var(--sp-3); padding:26px 28px; border-radius:var(--r-card-sm); background:var(--wine); color:var(--cream-text);
+    display:grid; gap:12px; font-size:0.98rem; line-height:1.6;}
+  .rules-note p{color:color-mix(in srgb, var(--cream-text) 86%, transparent);}
+</style>
+<noscript><style>
+  .reveal, .reveal-group > *, .hero-anim > *, .hero-visual, .hv-photo{opacity:1 !important; transform:none !important; animation:none !important;}
+</style></noscript>
+</head>
+<body>
+
+<span id="top"></span>
+
+<header id="siteHeader">
+  <nav class="nav">
+    <button type="button" class="brand" data-scroll-to="#top" aria-label="GENETYKA — на початок">
+      <img class="logo-img" src="data:image/jpeg;base64,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" alt="" width="40" height="40">
+      <span class="logo-mark">GENETYKA</span>
+    </button>
+    <div class="nav-links">
+      <button type="button" data-scroll-to="#services">Послуги</button>
+      <button type="button" data-scroll-to="#team">Технології</button>
+      <button type="button" data-scroll-to="#process">Як це працює</button>
+      <button type="button" data-scroll-to="#rules">Правила</button>
+      <button type="button" data-scroll-to="#faq">Питання</button>
+      <button type="button" data-scroll-to="#contacts">Контакти</button>
+    </div>
+    <div style="display:flex; align-items:center; gap:14px;">
+      <button type="button" class="btn btn-primary nav-cta" data-scroll-to="#contacts">Записатися</button>
+      <button type="button" class="burger" id="burgerOpen" aria-label="Відкрити меню" aria-expanded="false" aria-controls="mobileMenu" onclick="toggleMenu(true)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mm-top">
+    <div class="brand" aria-label="GENETYKA">
+      <img class="logo-img" src="data:image/jpeg;base64,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" alt="" width="40" height="40">
+      <span class="logo-mark">GENETYKA</span>
+    </div>
+    <button type="button" class="burger" aria-label="Закрити меню" onclick="toggleMenu(false)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="5" y1="5" x2="19" y2="19"/><line x1="5" y1="19" x2="19" y2="5"/></svg>
+    </button>
+  </div>
+  <button type="button" data-scroll-to="#services" onclick="toggleMenu(false)">Послуги</button>
+  <button type="button" data-scroll-to="#team" onclick="toggleMenu(false)">Технології</button>
+  <button type="button" data-scroll-to="#process" onclick="toggleMenu(false)">Як це працює</button>
+  <button type="button" data-scroll-to="#rules" onclick="toggleMenu(false)">Правила</button>
+  <button type="button" data-scroll-to="#faq" onclick="toggleMenu(false)">Питання</button>
+  <button type="button" data-scroll-to="#contacts" onclick="toggleMenu(false)">Контакти</button>
+  <button type="button" class="btn btn-primary" data-scroll-to="#contacts" onclick="toggleMenu(false)">Записатися</button>
+</div>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-anim">
+        <div class="eyebrow-city"><span class="dot"></span> GENETYKA studio · Чернівці · Коломия</div>
+        <h1>Гладка шкіра.<br>Тіло у&nbsp;формі.</h1>
+        <p class="hero-sub">Лазерна епіляція, ендосфера, Emsculpt + RF, крісло Кегеля, вакуумний масаж і мікроголковий RF-ліфтинг — консультація перед процедурою безкоштовна.</p>
+        <div class="hero-cta-row">
+          <button type="button" class="btn btn-primary" data-scroll-to="#contacts">Записатися на процедуру
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+          <div class="hero-quick">
+            <span>Або напряму:</span>
+            <a href="https://www.instagram.com/direct/t/17842451466492144/" target="_blank" rel="noopener" class="quick-link" aria-label="Написати в Instagram Direct"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg></a>
+            <a href="tel:+380970050906" class="quick-link" aria-label="Зателефонувати GENETYKA"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hv-panel">
+          <img class="hv-photo" decoding="async" fetchpriority="high" width="860" height="975" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 860 975'><defs> <radialGradient id='bg' cx='0.5' cy='0.35' r='0.85'><stop offset='0%' stop-color='%23233429'/><stop offset='62%' stop-color='%23233429'/><stop offset='100%' stop-color='%230E1912'/></radialGradient> <linearGradient id='gold' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='%23F1DDA8'/><stop offset='45%' stop-color='%23C9A764'/><stop offset='100%' stop-color='%238E6B2E'/></linearGradient> <radialGradient id='fadeg' cx='0.5' cy='0.5' r='0.5'><stop offset='80%' stop-color='white'/><stop offset='100%' stop-color='black'/></radialGradient><mask id='fade'><rect x='225' y='120' width='410' height='438' fill='url(%23fadeg)'/></mask><filter id='grain'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch' result='n'/><feColorMatrix in='n' type='matrix' values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.05 0'/></filter></defs> <rect width='860' height='975' fill='url(%23bg)'/> <image href='data:image/jpeg;base64,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' x='226' y='118' width='408' height='436'/> <rect width='860' height='975' filter='url(%23grain)'/></svg>" alt="GENETYKA — студія лазерної епіляції та корекції фігури">
+          <div class="hv-scrim"></div>
+        </div>
+        <div class="hv-caption">
+          <strong>Лазерна епіляція & корекція фігури</strong>
+          <span>Ендосфера · Emsculpt + RF · Крісло Кегеля · RF-ліфтинг</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADVANTAGES -->
+  <div class="advantages-wrap">
+    <section>
+      <div class="wrap">
+        <div class="adv-grid reveal-group">
+          <div class="adv-item">
+            <div class="adv-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+            <h3>Безкоштовна консультація</h3>
+            <p>Перед процедурою підбираємо зони, апарат і кількість сеансів саме під ваш запит.</p>
+          </div>
+          <div class="adv-item">
+            <div class="adv-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="8" width="18" height="13" rx="2"/><path d="M12 8v13M3 12h18M12 8c-2-4-6-4-6-1.5S10 8 12 8zm0 0c2-4 6-4 6-1.5S14 8 12 8z"/></svg></div>
+            <h3>Пальчики — у подарунок</h3>
+            <p>У топ-комплексах лазерної епіляції. Комплекси завжди вигідніші, ніж окремі зони.</p>
+          </div>
+          <div class="adv-item">
+            <div class="adv-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 12h8M12 8v8"/></svg></div>
+            <h3>Усе для тіла в одній студії</h3>
+            <p>Лазер, ендосфера, Emsculpt + RF, крісло Кегеля, вакуумний масаж і RF-ліфтинг.</p>
+          </div>
+          <div class="adv-item">
+            <div class="adv-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 6L9 17l-5-5"/></svg></div>
+            <h3>Абонементи до −20%</h3>
+            <p>Курси процедур із нижчою ціною за сеанс і пробні сеанси для нових клієнтів.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Послуги та ціни</span>
+        <h2>Оберіть процедуру — ціни вже всередині</h2>
+        <p>Лазерна епіляція, апаратна корекція фігури, масаж і мікроголковий RF-ліфтинг — актуальний прайс GENETYKA studio.</p>
+      </div>
+
+      <div class="service-tabs" id="tabs">
+        <button type="button" class="tab-btn active" data-tab="all">Усі</button>
+        <button type="button" class="tab-btn" data-tab="laser">Лазерна епіляція</button>
+        <button type="button" class="tab-btn" data-tab="endo">Ендосфера</button>
+        <button type="button" class="tab-btn" data-tab="ems">Emsculpt & Кегеля</button>
+        <button type="button" class="tab-btn" data-tab="massage">Масаж</button>
+        <button type="button" class="tab-btn" data-tab="rf">RF-ліфтинг</button>
+      </div>
+
+      <div class="services-grid reveal-group" id="servicesGrid" role="group" aria-label="Каталог послуг" tabindex="0">
+
+        <div class="service-card show" data-cat="laser">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Топ комплекси — GENETYKA">
+              <defs><linearGradient id="svcg0" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#3A5A45"/><stop offset="100%" stop-color="#132018"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg0)"/>
+              <circle cx="352" cy="46" r="92" fill="#D1B276" opacity="0.07"/>
+              <g fill="none" stroke="#EFE7D4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M128 214l70-70 34 34-70 70z"/><path d="M198 144l28-28 34 34-28 28"/></g>
+<g stroke="#D1B276" stroke-width="4" stroke-linecap="round"><path d="M270 106l34-34M282 128l42-10M248 94l10-42"/></g><circle cx="262" cy="114" r="8" fill="#D1B276"/>
+            </svg>
+            <span class="sc-tag">Лазер</span>
+          </div>
+          <div class="sc-body">
+            <h3>Топ комплекси</h3>
+            <p>Лазерна епіляція популярних зон одним візитом — пальчики у подарунок до кожного комплексу.</p>
+            <ul class="sc-list"><li><span>Бікіні + пахви</span><b><s>1 250</s>999 ₴</b></li><li><span>Бікіні + пахви + гомілки</span><b><s>2 000</s>1 599 ₴</b></li><li><span>Бікіні + пахви + ноги повністю</span><b><s>2 750</s>1 999 ₴</b></li><li><span>+ руки до ліктя</span><b><s>3 250</s>2 299 ₴</b></li><li><span>+ руки повністю</span><b><s>3 500</s>2 499 ₴</b></li><li class="sc-gift"><span>Пальчики</span><b>подарунок</b></li></ul>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>999 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="laser">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Вигідні комплекси — GENETYKA">
+              <defs><linearGradient id="svcg1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#3A5A45"/><stop offset="100%" stop-color="#132018"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg1)"/>
+              <circle cx="352" cy="46" r="92" fill="#D1B276" opacity="0.07"/>
+              <g fill="none" stroke="#EFE7D4" stroke-width="5" stroke-linecap="round"><path d="M200 66c-18 0-30 14-30 32s12 32 30 32 30-14 30-32-12-32-30-32z"/><path d="M152 244c0-60 18-100 48-100s48 40 48 100"/></g>
+<g fill="#D1B276"><circle cx="164" cy="196" r="7"/><circle cx="236" cy="196" r="7"/><circle cx="200" cy="232" r="7"/></g>
+            </svg>
+            <span class="sc-tag">Лазер</span>
+          </div>
+          <div class="sc-body">
+            <h3>Вигідні комплекси</h3>
+            <p>Великі зони тіла разом — найвигідніша ціна за кожну зону.</p>
+            <ul class="sc-list"><li><span>Все тіло</span><b><s>5 800</s>4 100 ₴</b></li><li><span>Спина + груди + шия + пахви + живіт + бікіні</span><b><s>3 800</s>2 950 ₴</b></li><li><span>Спина + груди + живіт</span><b><s>2 000</s>1 800 ₴</b></li><li><span>Спина + груди + пахви</span><b><s>1 900</s>1 700 ₴</b></li><li><span>Бікіні + пахви + груди</span><b><s>1 750</s>1 575 ₴</b></li></ul>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>1 575 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="laser">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Обличчя — GENETYKA">
+              <defs><linearGradient id="svcg2" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#3A5A45"/><stop offset="100%" stop-color="#132018"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg2)"/>
+              <circle cx="352" cy="46" r="92" fill="#D1B276" opacity="0.07"/>
+              <g fill="none" stroke="#EFE7D4" stroke-width="5" stroke-linecap="round"><path d="M200 62c-40 0-62 32-62 74 0 52 30 98 62 98s62-46 62-98c0-42-22-74-62-74z"/><path d="M176 132h10M214 132h10M186 182c8 6 20 6 28 0"/></g>
+<path d="M278 92l18-18M290 116h22M266 70l6-22" stroke="#D1B276" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Лазер</span>
+          </div>
+          <div class="sc-body">
+            <h3>Обличчя</h3>
+            <p>Лазерна епіляція обличчя, шиї та окремих зон.</p>
+            <ul class="sc-list"><li><span>Голова</span><b>650 ₴</b></li><li><span>Все обличчя</span><b>600 ₴</b></li><li><span>Шия / шия ½</span><b>550 / 300 ₴</b></li><li><span>Щоки, верхня губа, підборіддя, скроні, міжбрів’я</span><b>200 ₴</b></li></ul>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>200 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="laser">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Руки — GENETYKA">
+              <defs><linearGradient id="svcg3" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#3A5A45"/><stop offset="100%" stop-color="#132018"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg3)"/>
+              <circle cx="352" cy="46" r="92" fill="#D1B276" opacity="0.07"/>
+              <g fill="none" stroke="#EFE7D4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M118 210c40-6 70-24 96-56l30-42c8-10 22-8 26 4l-34 64c-14 26-48 48-112 60"/></g>
+<path d="M280 86l18-18M292 110h22" stroke="#D1B276" stroke-width="4" stroke-linecap="round"/><circle cx="246" cy="132" r="7" fill="#D1B276"/>
+            </svg>
+            <span class="sc-tag">Лазер</span>
+          </div>
+          <div class="sc-body">
+            <h3>Руки</h3>
+            <p>Повністю, до ліктя, пахви, пальці та кисті.</p>
+            <ul class="sc-list"><li><span>Руки повністю</span><b>750 ₴</b></li><li><span>Руки до ліктя</span><b>500 ₴</b></li><li><span>Пахви</span><b>400 ₴</b></li><li><span>Пальці рук / кисті</span><b>200 ₴</b></li></ul>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>200 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="laser">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ноги — GENETYKA">
+              <defs><linearGradient id="svcg4" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#3A5A45"/><stop offset="100%" stop-color="#132018"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg4)"/>
+              <circle cx="352" cy="46" r="92" fill="#D1B276" opacity="0.07"/>
+              <g fill="none" stroke="#EFE7D4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M176 60c-4 60 6 110 14 150l-4 40h44l-4-24c6-50 6-110-4-166"/></g>
+<path d="M250 96l18-18M262 120h22" stroke="#D1B276" stroke-width="4" stroke-linecap="round"/><circle cx="196" cy="160" r="7" fill="#D1B276"/>
+            </svg>
+            <span class="sc-tag">Лазер</span>
+          </div>
+          <div class="sc-body">
+            <h3>Ноги</h3>
+            <p>Від стегон до пальців — окремими зонами або повністю.</p>
+            <ul class="sc-list"><li><span>Ноги повністю</span><b>1 500 ₴</b></li><li><span>Стегна</span><b>900 ₴</b></li><li><span>Гомілки (до колін)</span><b>750 ₴</b></li><li><span>Внутрішня частина стегон</span><b>500 ₴</b></li><li><span>Коліна / верх стопи</span><b>250 ₴</b></li><li><span>Пальці ніг</span><b>200 ₴</b></li></ul>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>200 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="laser">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Інтимна зона — GENETYKA">
+              <defs><linearGradient id="svcg5" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#3A5A45"/><stop offset="100%" stop-color="#132018"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg5)"/>
+              <circle cx="352" cy="46" r="92" fill="#D1B276" opacity="0.07"/>
+              <g fill="none" stroke="#EFE7D4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M120 108h160c-10 56-44 96-80 106-36-10-70-50-80-106z"/></g>
+<g fill="#D1B276"><circle cx="200" cy="168" r="8"/><circle cx="160" cy="132" r="6"/><circle cx="240" cy="132" r="6"/></g>
+            </svg>
+            <span class="sc-tag">Лазер</span>
+          </div>
+          <div class="sc-body">
+            <h3>Інтимна зона</h3>
+            <p>Глибоке та неглибоке бікіні, сідниці й окремі зони.</p>
+            <ul class="sc-list"><li><span>Бікіні глибоке</span><b>850 ₴</b></li><li><span>Бікіні неглибоке</span><b>700 ₴</b></li><li><span>Сідниці</span><b>550 ₴</b></li><li><span>Лінія трусиків</span><b>500 ₴</b></li><li><span>Лобок</span><b>400 ₴</b></li><li><span>Міжсіднична складка</span><b>350 ₴</b></li><li><span>Статеві губи</span><b>300 ₴</b></li></ul>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>300 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="laser">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Тулуб — GENETYKA">
+              <defs><linearGradient id="svcg6" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#3A5A45"/><stop offset="100%" stop-color="#132018"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg6)"/>
+              <circle cx="352" cy="46" r="92" fill="#D1B276" opacity="0.07"/>
+              <g fill="none" stroke="#EFE7D4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M138 70c20 10 42 14 62 14s42-4 62-14l14 40-18 14 6 120H136l6-120-18-14z"/></g>
+<path d="M200 118v100" stroke="#D1B276" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 14"/>
+            </svg>
+            <span class="sc-tag">Лазер</span>
+          </div>
+          <div class="sc-body">
+            <h3>Тулуб</h3>
+            <p>Спина, груди, живіт, плечі, декольте та інші зони.</p>
+            <ul class="sc-list"><li><span>Спина</span><b>1 000 ₴</b></li><li><span>Груди / живіт / плечі</span><b>500 ₴</b></li><li><span>Поперекова зона</span><b>450 ₴</b></li><li><span>Декольте</span><b>400 ₴</b></li><li><span>Лінія живота / ореоли</span><b>250 ₴</b></li></ul>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>250 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="endo">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Сферотерапія (ендосфера) — GENETYKA">
+              <defs><linearGradient id="svcg7" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#456149"/><stop offset="100%" stop-color="#17251B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg7)"/>
+              <circle cx="352" cy="46" r="92" fill="#D1B276" opacity="0.07"/>
+              <g fill="none" stroke="#EFE7D4" stroke-width="5"><rect x="110" y="122" width="180" height="56" rx="28"/></g>
+<g fill="#D1B276"><circle cx="138" cy="150" r="13"/><circle cx="174" cy="150" r="13"/><circle cx="210" cy="150" r="13"/><circle cx="246" cy="150" r="13"/></g>
+<path d="M200 178v54M178 232h44" stroke="#EFE7D4" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Ендосфера</span>
+          </div>
+          <div class="sc-body">
+            <h3>Сферотерапія (ендосфера)</h3>
+            <p>Корекція фігури та підтяжка шкіри. Для нових клієнтів — пробні сеанси.</p>
+            <ul class="sc-list"><li><span>Пробний сеанс 30 / 40 хв</span><b>500 / 700 ₴</b></li><li><span>Все тіло · 40 хв</span><b>900 ₴</b></li><li><span>Все тіло · 60 хв</span><b>1 200 ₴</b></li><li><span>Все тіло · 90 хв</span><b>1 800 ₴</b></li><li><span>Одна зона · 20 хв (живіт, стегна або сідниці)</span><b>500 ₴</b></li><li><span>Сферотерапія 30 хв + кавітація 20 хв</span><b>1 100 ₴</b></li></ul>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>500 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="endo">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Сферотерапія — абонементи — GENETYKA">
+              <defs><linearGradient id="svcg8" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#456149"/><stop offset="100%" stop-color="#17251B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg8)"/>
+              <circle cx="352" cy="46" r="92" fill="#D1B276" opacity="0.07"/>
+              <g fill="none" stroke="#EFE7D4" stroke-width="5"><rect x="110" y="122" width="180" height="56" rx="28"/></g>
+<g fill="#D1B276"><circle cx="138" cy="150" r="13"/><circle cx="174" cy="150" r="13"/><circle cx="210" cy="150" r="13"/><circle cx="246" cy="150" r="13"/></g>
+<path d="M200 178v54M178 232h44" stroke="#EFE7D4" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Ендосфера</span>
+          </div>
+          <div class="sc-body">
+            <h3>Сферотерапія — абонементи</h3>
+            <p>Курс процедур із нижчою ціною за сеанс.</p>
+            <ul class="sc-list"><li><span>40 хв · 5 / 8 / 10 проц.</span><b>4 050 / 6 120 / 7 200 ₴</b></li><li><span>60 хв · 5 / 8 проц.</span><b>5 400 / 8 160 ₴</b></li><li><span>60 хв · 10 / 12 проц.</span><b>9 600 / 10 800 ₴</b></li><li><span>90 хв · 5 / 8 проц.</span><b>8 100 / 12 240 ₴</b></li><li><span>90 хв · 10 / 12 проц.</span><b>14 400 / 16 200 ₴</b></li></ul>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>4 050 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="ems">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Emsculpt + RF — GENETYKA">
+              <defs><linearGradient id="svcg9" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#2F4A3B"/><stop offset="100%" stop-color="#0F1A13"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg9)"/>
+              <circle cx="352" cy="46" r="92" fill="#D1B276" opacity="0.07"/>
+              <path d="M216 62l-60 98h46l-18 82 64-106h-48z" fill="none" stroke="#EFE7D4" stroke-width="5" stroke-linejoin="round"/>
+<g stroke="#D1B276" stroke-width="4" stroke-linecap="round"><path d="M110 120c-12 20-12 44 0 64M290 120c12 20 12 44 0 64M132 132c-6 12-6 28 0 40M268 132c6 12 6 28 0 40"/></g>
+            </svg>
+            <span class="sc-tag">EMS & Кегеля</span>
+          </div>
+          <div class="sc-body">
+            <h3>Emsculpt + RF</h3>
+            <p>Формує рельєф, підтягує сідниці та живіт, зменшує об’єми — 30 хв еквівалентні 2 год тренувань.</p>
+            <ul class="sc-list"><li><span>Пробний сеанс · 20 хв</span><b>600 ₴</b></li><li><span>Разова процедура · 30 хв</span><b>1 500 ₴</b></li><li><span>5 процедур</span><b>6 000 ₴</b></li><li><span>8 процедур</span><b>9 000 ₴</b></li><li><span>12 процедур</span><b>12 600 ₴</b></li></ul>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>600 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="ems">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Крісло Кегеля — GENETYKA">
+              <defs><linearGradient id="svcg10" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#2F4A3B"/><stop offset="100%" stop-color="#0F1A13"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg10)"/>
+              <circle cx="352" cy="46" r="92" fill="#D1B276" opacity="0.07"/>
+              <g fill="none" stroke="#EFE7D4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M150 70v110h110"/><path d="M150 180l-14 54M260 180l14 54"/><rect x="164" y="152" width="96" height="28" rx="10"/></g>
+<g stroke="#D1B276" stroke-width="4" stroke-linecap="round"><path d="M188 130c8-10 40-10 48 0M178 112c14-16 54-16 68 0"/></g>
+            </svg>
+            <span class="sc-tag">EMS & Кегеля</span>
+          </div>
+          <div class="sc-body">
+            <h3>Крісло Кегеля</h3>
+            <p>Делікатне зміцнення м’язів тазового дна, профілактика та вирішення інтимних проблем без реабілітації.</p>
+            <ul class="sc-list"><li><span>Пробний сеанс · 20 хв</span><b>600 ₴</b></li><li><span>Разова процедура · 30 хв</span><b>1 500 ₴</b></li><li><span>5 процедур</span><b>6 000 ₴</b></li><li><span>8 процедур</span><b>9 000 ₴</b></li><li><span>12 процедур</span><b>12 600 ₴</b></li></ul>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>600 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="ems">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Комбіновані абонементи — GENETYKA">
+              <defs><linearGradient id="svcg11" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#2F4A3B"/><stop offset="100%" stop-color="#0F1A13"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg11)"/>
+              <circle cx="352" cy="46" r="92" fill="#D1B276" opacity="0.07"/>
+              <g fill="none" stroke="#EFE7D4" stroke-width="5"><circle cx="164" cy="150" r="54"/><circle cx="236" cy="150" r="54"/></g>
+<path d="M200 128v44M178 150h44" stroke="#D1B276" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">EMS & Кегеля</span>
+          </div>
+          <div class="sc-body">
+            <h3>Комбіновані абонементи</h3>
+            <p>Сферотерапія + Emsculpt + RF в одному курсі. Найкращий ефект — з інтервалом 2–3 дні.</p>
+            <ul class="sc-list"><li><span>Сфера 45 хв + EMS 30 хв · 6 / 8</span><b>10 260 / 12 520 ₴</b></li><li><span>Сфера 45 хв + EMS 30 хв · 10 / 12</span><b>14 200 / 15 600 ₴</b></li><li><span>Сфера 60 хв + EMS 30 хв · 6 / 8</span><b>11 880 / 14 560 ₴</b></li><li><span>Сфера 60 хв + EMS 30 хв · 10 / 12</span><b>16 300 / 18 000 ₴</b></li></ul>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>10 260 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="massage">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Вакуумний масаж — GENETYKA">
+              <defs><linearGradient id="svcg12" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#4A6450"/><stop offset="100%" stop-color="#1A291E"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg12)"/>
+              <circle cx="352" cy="46" r="92" fill="#D1B276" opacity="0.07"/>
+              <g fill="none" stroke="#EFE7D4" stroke-width="5" stroke-linecap="round"><path d="M150 200a50 50 0 0 1 100 0"/><path d="M200 150V82"/><path d="M178 82h44"/></g>
+<g fill="none" stroke="#D1B276" stroke-width="4" stroke-linecap="round"><path d="M112 232c30-14 58-14 88 0s58 14 88 0"/></g>
+            </svg>
+            <span class="sc-tag">Масаж</span>
+          </div>
+          <div class="sc-body">
+            <h3>Вакуумний масаж</h3>
+            <p>Лімфодренаж, зменшення об’ємів, тонус шкіри. Абонементи: 5 проц. −10%, 8 проц. −15%, 10 проц. −20%.</p>
+            <ul class="sc-list"><li><span>15 хв</span><b>350 ₴</b></li><li><span>30 хв</span><b>600 ₴</b></li><li><span>50 хв</span><b>900 ₴</b></li><li><span>60 хв</span><b>1 100 ₴</b></li><li><span>Абонемент 10 × 60 хв</span><b>8 800 ₴</b></li></ul>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>350 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="rf">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Мікроголковий RF-ліфтинг: обличчя — GENETYKA">
+              <defs><linearGradient id="svcg13" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#3D5546"/><stop offset="100%" stop-color="#121D16"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg13)"/>
+              <circle cx="352" cy="46" r="92" fill="#D1B276" opacity="0.07"/>
+              <g fill="none" stroke="#EFE7D4" stroke-width="5" stroke-linecap="round"><rect x="154" y="74" width="92" height="64" rx="14"/><path d="M200 138v30"/></g>
+<g stroke="#D1B276" stroke-width="3.5" stroke-linecap="round"><path d="M168 182v40M184 182v40M200 182v40M216 182v40M232 182v40"/></g>
+            </svg>
+            <span class="sc-tag">RF-ліфтинг</span>
+          </div>
+          <div class="sc-body">
+            <h3>Мікроголковий RF-ліфтинг: обличчя</h3>
+            <p>Ефективна підтяжка шкіри без ін’єкцій та пластичної хірургії. Ціна — за одну процедуру.</p>
+            <ul class="sc-list"><li><span>Обличчя повністю</span><b>5 000 ₴</b></li><li><span>Субментальна зона (підборіддя)</span><b>4 000 ₴</b></li><li><span>Періорбітальна зона (навколо очей)</span><b>4 000 ₴</b></li><li><span>Шия</span><b>4 000 ₴</b></li><li><span>Декольте</span><b>5 000 ₴</b></li></ul>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>4 000 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="rf">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Мікроголковий RF-ліфтинг: тіло — GENETYKA">
+              <defs><linearGradient id="svcg14" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#3D5546"/><stop offset="100%" stop-color="#121D16"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg14)"/>
+              <circle cx="352" cy="46" r="92" fill="#D1B276" opacity="0.07"/>
+              <g fill="none" stroke="#EFE7D4" stroke-width="5" stroke-linecap="round"><path d="M128 220c0-70 32-130 72-130s72 60 72 130"/></g>
+<g stroke="#D1B276" stroke-width="3.5" stroke-linecap="round"><path d="M176 150v30M192 150v30M208 150v30M224 150v30"/></g><circle cx="200" cy="96" r="8" fill="#D1B276"/>
+            </svg>
+            <span class="sc-tag">RF-ліфтинг</span>
+          </div>
+          <div class="sc-body">
+            <h3>Мікроголковий RF-ліфтинг: тіло</h3>
+            <p>2 зони — знижка 1 000 ₴, 3 зони — знижка 3 000 ₴ від загальної вартості.</p>
+            <ul class="sc-list"><li><span>Кисті рук / руки (трицепс)</span><b>4 000 ₴</b></li><li><span>Живіт</span><b>6 500 ₴</b></li><li><span>Сідниці</span><b>8 000 ₴</b></li><li><span>Внутрішня частина стегон</span><b>5 500 ₴</b></li><li><span>Коліна (зона над колінами)</span><b>4 000 ₴</b></li><li><span>Локальна зона до 10 см (рубець, шрам, стрий)</span><b>2 500 ₴</b></li></ul>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>2 500 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="sc-hint">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+        Гортайте, щоб побачити всі послуги
+      </div>
+      <p class="sc-note">Ціни вказані за одну процедуру. Консультація перед процедурою — безкоштовна; точну кількість сеансів і зони підбираємо індивідуально.</p>
+    </div>
+  </section>
+
+  <!-- TECHNOLOGIES (team layout) -->
+  <section id="team">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Технології</span>
+        <h2>Апаратні процедури, з якими працюємо</h2>
+        <p>Кожен напрямок GENETYKA — окрема технологія під конкретну задачу: від гладкої шкіри до рельєфу та підтяжки.</p>
+      </div>
+      <div class="team-grid reveal-group">
+        <a class="team-card" href="https://www.instagram.com/direct/t/17842451466492144/" target="_blank" rel="noopener" aria-label="Лазерна епіляція: запитати в Instagram Direct">
+          <div class="team-avatar">Л</div>
+          <div class="team-info">
+            <div class="team-name">Лазерна епіляція</div>
+            <div class="team-role">Обличчя, тіло, руки, ноги та інтимні зони — окремо або комплексами</div>
+            <span class="team-handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Запитати в Direct</span>
+          </div>
+        </a>
+        <a class="team-card" href="https://www.instagram.com/direct/t/17842451466492144/" target="_blank" rel="noopener" aria-label="Сферотерапія (ендосфера): запитати в Instagram Direct">
+          <div class="team-avatar">С</div>
+          <div class="team-info">
+            <div class="team-name">Сферотерапія (ендосфера)</div>
+            <div class="team-role">Корекція фігури, лімфодренаж і підтяжка шкіри</div>
+            <span class="team-handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Запитати в Direct</span>
+          </div>
+        </a>
+        <a class="team-card" href="https://www.instagram.com/direct/t/17842451466492144/" target="_blank" rel="noopener" aria-label="Emsculpt + RF: запитати в Instagram Direct">
+          <div class="team-avatar">E</div>
+          <div class="team-info">
+            <div class="team-name">Emsculpt + RF</div>
+            <div class="team-role">Рельєф м’язів, підтягнуті сідниці та живіт, зменшення об’ємів</div>
+            <span class="team-handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Запитати в Direct</span>
+          </div>
+        </a>
+        <a class="team-card" href="https://www.instagram.com/direct/t/17842451466492144/" target="_blank" rel="noopener" aria-label="Крісло Кегеля: запитати в Instagram Direct">
+          <div class="team-avatar">К</div>
+          <div class="team-info">
+            <div class="team-name">Крісло Кегеля</div>
+            <div class="team-role">Зміцнення м’язів тазового дна без реабілітації</div>
+            <span class="team-handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Запитати в Direct</span>
+          </div>
+        </a>
+        <a class="team-card" href="https://www.instagram.com/direct/t/17842451466492144/" target="_blank" rel="noopener" aria-label="Мікроголковий RF-ліфтинг: запитати в Instagram Direct">
+          <div class="team-avatar">R</div>
+          <div class="team-info">
+            <div class="team-name">Мікроголковий RF-ліфтинг</div>
+            <div class="team-role">Ліфтинг обличчя й тіла, корекція рубців і стрий</div>
+            <span class="team-handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Запитати в Direct</span>
+          </div>
+        </a>
+        <a class="team-card" href="https://www.instagram.com/direct/t/17842451466492144/" target="_blank" rel="noopener" aria-label="Вакуумний масаж: запитати в Instagram Direct">
+          <div class="team-avatar">В</div>
+          <div class="team-info">
+            <div class="team-name">Вакуумний масаж</div>
+            <div class="team-role">Лімфодренаж, зменшення об’ємів, тонус шкіри</div>
+            <span class="team-handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Запитати в Direct</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="process">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Як це працює</span>
+        <h2>Від повідомлення до результату — чотири кроки</h2>
+      </div>
+      <div class="steps reveal-group">
+        <div class="step">
+          <div class="step-index">1</div>
+          <div>
+            <h3>Пишете або телефонуєте</h3>
+            <p>Instagram Direct, Telegram чи дзвінок — назвіть процедуру або зону, яка вас цікавить.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-index">2</div>
+          <div>
+            <h3>Безкоштовна консультація</h3>
+            <p>Підбираємо зони, процедуру й курс, відповідаємо на всі питання ще до початку.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-index">3</div>
+          <div>
+            <h3>Підтвердження запису</h3>
+            <p>За 4 дні до візиту надсилаємо нагадування — запис активний після вашого підтвердження.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-index">4</div>
+          <div>
+            <h3>Процедура та курс</h3>
+            <p>Проводимо процедуру й плануємо наступні сеанси, щоб результат був максимальним.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RULES -->
+  <section id="rules">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Правила</span>
+        <h2>Правила запису та відвідування</h2>
+      </div>
+      <div class="rules-grid reveal-group">
+        <div class="rule-card">
+          <h3><i>1</i>Підтвердження запису</h3>
+          <p>За 4 дні до візиту ми надсилаємо нагадування для підтвердження.</p>
+          <p>Це дає вам можливість завчасно спланувати або, за потреби, скоригувати свій візит.</p>
+          <p><strong>Запис вважається активним після отримання підтвердження.</strong></p>
+        </div>
+        <div class="rule-card">
+          <h3><i>2</i>Перенесення / скасування</h3>
+          <p>Будемо щиро вдячні, якщо ви повідомите про зміни не пізніше ніж за 24 години. Це дозволяє нам підтримувати високий рівень сервісу та комфорт для кожного клієнта.</p>
+          <p><strong>У разі несвоєчасного скасування при АБОНЕМЕНТІ — візит вважається використаним.</strong></p>
+        </div>
+        <div class="rule-card">
+          <h3><i>3</i>Неявка</h3>
+          <p>Після двох неявок або перенесень у день візиту, наступний запис здійснюється за <strong>100% передоплатою</strong>.</p>
+        </div>
+        <div class="rule-card">
+          <h3><i>4</i>Передоплата</h3>
+          <p>Для тривалих процедур передбачена передоплата.</p>
+          <p>При завчасному перенесенні — вона зберігається, при неявці — не повертається.</p>
+        </div>
+      </div>
+      <div class="rules-note reveal">
+        <p>🤷‍♀️ У разі запізнення час процедури може бути скорочений, але вартість залишається повною. Час оплачується незалежно від фактичної тривалості при запізненні клієнта.</p>
+        <p>🤍 Ми цінуємо ваш час і з турботою ставимось до часу наших майстрів, створюючи комфортний простір для кожного візиту. Водночас ми з розумінням ставимось до життєвих обставин.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Питання</span>
+        <h2>Відповіді, які зазвичай питають перед записом</h2>
+      </div>
+      <div class="faq-list" id="faqList">
+        <div class="faq-item">
+          <button type="button" class="faq-q" aria-expanded="false">Як записатися на процедуру?<span class="faq-plus"></span></button>
+          <div class="faq-a"><p>Натисніть «Записатися» на сайті, напишіть у Direct в Instagram, у Telegram або зателефонуйте за номером +380 97 005 09 06 — вкажіть процедуру й бажаний день, і ми запропонуємо найближчий вільний час.</p></div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-q" aria-expanded="false">Чи платна консультація?<span class="faq-plus"></span></button>
+          <div class="faq-a"><p>Ні, консультація перед процедурою безкоштовна. На ній підбираємо зони, кількість сеансів і процедуру під ваш запит.</p></div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-q" aria-expanded="false">Скільки коштують процедури?<span class="faq-plus"></span></button>
+          <div class="faq-a"><p>Окремі зони лазерної епіляції — від 200 ₴, комплекси — від 999 ₴, сферотерапія — від 500 ₴, Emsculpt + RF і крісло Кегеля — від 600 ₴ за пробний сеанс, вакуумний масаж — від 350 ₴, мікроголковий RF-ліфтинг — від 2 500 ₴ за зону.</p></div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-q" aria-expanded="false">Чи є знижки на кілька зон і курси?<span class="faq-plus"></span></button>
+          <div class="faq-a"><p>Так. Комплекси лазерної епіляції дешевші за окремі зони, у топ-комплексах пальчики — у подарунок. Абонементи на вакуумний масаж дають −10%, −15% або −20%, на RF-ліфтинг діє знижка 1 000 ₴ за 2 зони і 3 000 ₴ за 3 зони.</p></div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-q" aria-expanded="false">Чи можна спершу спробувати апаратну процедуру?<span class="faq-plus"></span></button>
+          <div class="faq-a"><p>Так, для нових клієнтів є пробні сеанси: сферотерапія 30 хв — 500 ₴ або 40 хв — 700 ₴, Emsculpt + RF / крісло Кегеля 20 хв — 600 ₴.</p></div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-q" aria-expanded="false">Як часто робити Emsculpt + RF?<span class="faq-plus"></span></button>
+          <div class="faq-a"><p>Максимальний ефект досягається курсом з інтервалом 2–3 дні між сеансами. Кількість процедур підберемо на консультації.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTS -->
+  <section id="contacts">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Контакти</span>
+        <h2>GENETYKA у Чернівцях та Коломиї</h2>
+        <p>Напишіть у Direct, Telegram або зателефонуйте — підберемо зручний час і процедуру під ваш запит.</p>
+      </div>
+
+      <div class="contacts-grid reveal-group">
+        <div class="contact-card">
+          <div class="contact-row">
+            <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div><div class="cl-label">Телефон / Telegram</div><a class="cl-value" href="tel:+380970050906">+380 97 005 09 06</a></div>
+          </div>
+          <div class="contact-row">
+            <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg></div>
+            <div><div class="cl-label">Instagram</div><a class="cl-value" href="https://www.instagram.com/genetyka.studio/" target="_blank" rel="noopener">@genetyka.studio</a></div>
+          </div>
+          <div class="contact-row">
+            <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+            <div><div class="cl-label">Instagram Direct</div><a class="cl-value" href="https://www.instagram.com/direct/t/17842451466492144/" target="_blank" rel="noopener">Написати в Direct</a></div>
+          </div>
+          <div class="contact-row">
+            <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><div class="cl-label">Адреса</div><a class="cl-value" href="https://www.google.com/maps/search/?api=1&query=%D0%B2%D1%83%D0%BB.+%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B8%D1%82%D1%83%D1%86%D1%96%D0%B9%D0%BD%D0%B0+63+%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D1%86%D1%96" target="_blank" rel="noopener">вул. Конституційна, 63, Чернівці</a></div>
+          </div>
+          <div class="contact-socials">
+            <a class="soc" href="https://www.instagram.com/genetyka.studio/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+            <a class="soc" href="https://t.me/+380970050906" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M21.5 4.5L2.8 11.7c-.9.4-.9 1.6.1 1.9l4.6 1.4 1.8 5.6c.2.7 1.1.9 1.6.4l2.6-2.4 4.7 3.5c.6.4 1.4.1 1.6-.6l3.2-15.4c.2-.9-.7-1.6-1.5-1.2z"/><path d="M7.5 15l9.8-6.6"/></svg></a>
+            <a class="soc" href="tel:+380970050906" aria-label="Телефон"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg></a>
+          </div>
+        </div>
+
+        <a class="map-card" href="https://www.google.com/maps/search/?api=1&query=%D0%B2%D1%83%D0%BB.+%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B8%D1%82%D1%83%D1%86%D1%96%D0%B9%D0%BD%D0%B0+63+%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D1%86%D1%96" target="_blank" rel="noopener">
+          <span class="map-pin">
+            <span class="pulse"></span>
+            <span class="dot"></span>
+            <span>вул. Конституційна, 63</span>
+          </span>
+          <span class="map-open">Відкрити в Google Maps
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </span>
+        </a>
+      </div>
+
+      <div class="final-cta reveal">
+        <h2>Готові до гладкої шкіри та тіла у формі?</h2>
+        <div class="final-cta-actions">
+          <a href="tel:+380970050906" class="btn btn-primary">Зателефонувати
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="https://www.instagram.com/direct/t/17842451466492144/" target="_blank" rel="noopener" class="btn btn-ghost">Написати в Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="toast" id="phoneToast" role="status" aria-live="polite"></div>
+
+<footer>
+  <div class="wrap footer-row">
+    <div>
+      <span class="footer-logo"><img class="logo-img" src="data:image/jpeg;base64,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" alt="" width="40" height="40">GENETYKA</span>
+      © 2026 GENETYKA studio. Лазерна епіляція & корекція фігури, Чернівці · Коломия.
+    </div>
+    <div>Лазер · Ендосфера · Emsculpt + RF · Крісло Кегеля · Масаж · RF-ліфтинг</div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  // ---------- header state on scroll ----------
+  var header = document.getElementById('siteHeader');
+  var ticking = false;
+  window.addEventListener('scroll', function () {
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(function () {
+      header.classList.toggle('scrolled', window.scrollY > 12);
+      ticking = false;
+    });
+  }, { passive: true });
+
+  // ---------- mobile menu ----------
+  var menu = document.getElementById('mobileMenu');
+  var burger = document.getElementById('burgerOpen');
+
+  window.toggleMenu = function (open) {
+    menu.classList.toggle('open', open);
+    document.body.classList.toggle('menu-open', open);
+    if (burger) burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (!open && burger) burger.focus({ preventScroll: true });
+    if (open) {
+      var firstLink = menu.querySelector('a[href], button');
+      if (firstLink) firstLink.focus({ preventScroll: true });
+    }
+  };
+
+  document.addEventListener('keydown', function (e) {
+    if (!menu.classList.contains('open')) return;
+    if (e.key === 'Escape') { window.toggleMenu(false); return; }
+    // FIX: keep Tab inside the overlay — focus used to walk onto the page behind it
+    if (e.key !== 'Tab') return;
+    var f = menu.querySelectorAll('a[href], button:not([disabled])');
+    if (!f.length) return;
+    var first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  });
+
+  // FIX: body{overflow:hidden} does not stop touch-scrolling the page behind an
+  // overlay on iOS Safari — block touchmove outside the menu while it is open.
+  document.addEventListener('touchmove', function (e) {
+    if (document.body.classList.contains('menu-open') && !menu.contains(e.target)) {
+      e.preventDefault();
+    }
+  }, { passive: false });
+
+  // never leave the overlay open when the layout switches to desktop
+  window.addEventListener('resize', function () {
+    if (window.innerWidth >= 1040 && menu.classList.contains('open')) window.toggleMenu(false);
+  });
+
+  // ---------- in-page navigation ----------
+  // These are <button> elements, not <a href="#...">, on purpose: a real anchor
+  // href pointing at a hash gets resolved into a full navigation attempt in some
+  // embedded/sandboxed preview hosts (e.g. srcdoc-based artifact previews), which
+  // then intercept the click with their own "leave this page?" prompt even though
+  // the page itself never navigates anywhere. A button has nothing for that kind
+  // of host-level link interception to hook into, so it just scrolls, everywhere.
+  document.querySelectorAll('[data-scroll-to]').forEach(function (el) {
+    var targetSel = el.getAttribute('data-scroll-to');
+    if (!targetSel || targetSel === '#') return;
+    var target = document.querySelector(targetSel);
+    if (!target) return;
+    el.addEventListener('click', function () {
+      var startY = window.pageYOffset;
+      try {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } catch (err) {
+        target.scrollIntoView();
+      }
+      // cosmetic only (puts the section hash in the address bar) — sandboxed
+      // preview frames (about:srcdoc) throw SecurityError here, so this must
+      // never be allowed to block the scroll above it.
+      try { history.pushState(null, '', targetSel); } catch (err) {}
+      setTimeout(function () {
+        if (Math.abs(window.pageYOffset - startY) < 10) {
+          try {
+            target.scrollIntoView({ behavior: 'instant', block: 'start' });
+          } catch (err) {
+            target.scrollIntoView();
+          }
+        }
+      }, 500);
+    });
+  });
+
+  // ---------- service filter ----------
+  var tabs = document.querySelectorAll('.tab-btn');
+  var cards = document.querySelectorAll('.service-card');
+  var grid = document.getElementById('servicesGrid');
+
+  tabs.forEach(function (tab) {
+    tab.setAttribute('aria-pressed', tab.classList.contains('active') ? 'true' : 'false');
+    tab.addEventListener('click', function () {
+      tabs.forEach(function (t) {
+        t.classList.remove('active');
+        t.setAttribute('aria-pressed', 'false');
+      });
+      tab.classList.add('active');
+      tab.setAttribute('aria-pressed', 'true');
+
+      var cat = tab.getAttribute('data-tab');
+      cards.forEach(function (card) {
+        card.classList.toggle('show', cat === 'all' || card.getAttribute('data-cat') === cat);
+      });
+
+      // the phone layout is a horizontal scroller — start the new set from the left
+      if (grid) grid.scrollLeft = 0;
+      // keep the chosen tab in view inside its own scroller
+      if (tab.scrollIntoView) tab.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+    });
+  });
+
+  // ---------- FAQ accordion ----------
+  var faqItems = Array.prototype.slice.call(document.querySelectorAll('.faq-item'));
+
+  function closeAll() {
+    faqItems.forEach(function (item) {
+      item.classList.remove('open');
+      var a = item.querySelector('.faq-a');
+      var b = item.querySelector('.faq-q');
+      if (a) a.style.maxHeight = null;
+      if (b) b.setAttribute('aria-expanded', 'false');
+    });
+  }
+
+  faqItems.forEach(function (item) {
+    var btn = item.querySelector('.faq-q');
+    var answer = item.querySelector('.faq-a');
+    if (!btn || !answer) return;
+    btn.addEventListener('click', function () {
+      var wasOpen = item.classList.contains('open');
+      closeAll();
+      if (!wasOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      }
+    });
+  });
+
+  // an open answer keeps a pixel height — recompute it when the text reflows
+  var resizeTimer;
+  window.addEventListener('resize', function () {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function () {
+      var open = document.querySelector('.faq-item.open .faq-a');
+      if (open) open.style.maxHeight = open.scrollHeight + 'px';
+    }, 150);
+  });
+
+  // ---------- phone links ----------
+  // inside a sandboxed frame (artifact preview, in-app browser, embed) a tel:
+  // navigation is silently swallowed, so the button looks dead. Attempt the call,
+  // then always surface the number itself so there is a usable fallback.
+  var toast = document.getElementById('phoneToast');
+  var toastTimer;
+
+  function showToast(number) {
+    if (!toast) return;
+    toast.innerHTML = '<a href="tel:' + number.replace(/[^+\d]/g, '') + '">' + number + '</a>' +
+                      '<small>торкніться, щоб подзвонити</small>';
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { toast.classList.remove('show'); }, 6000);
+  }
+
+  document.querySelectorAll('a[href^="tel:"]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      if (window.top === window.self) return;   // real page: let the browser handle it
+      if (link.closest('.toast')) return;       // the toast link itself
+      e.preventDefault();
+
+      var raw = link.getAttribute('href').replace('tel:', '');
+      var pretty = raw.replace(/^(\+380)(\d{2})(\d{3})(\d{2})(\d{2})$/, '$1 $2 $3 $4 $5');
+
+      try { window.open(link.href, '_blank'); } catch (err) {}
+      try { window.top.location.href = link.href; } catch (err) {}
+      if (navigator.clipboard) { navigator.clipboard.writeText(raw).catch(function () {}); }
+
+      showToast(pretty);
+    });
+  });
+
+  // ---------- scroll reveal ----------
+  var revealEls = Array.prototype.slice.call(document.querySelectorAll('.reveal, .reveal-group'));
+
+  function show(el) {
+    if (el.classList.contains('in')) return;
+    el.classList.add('in');
+    if (io) io.unobserve(el);
+  }
+
+  // A fast flick can carry an element past the viewport between two observer
+  // samples, leaving it permanently invisible. Sweep anything already scrolled
+  // into (or past) view so no content can be lost, whatever the scroll speed.
+  function sweep() {
+    for (var i = revealEls.length - 1; i >= 0; i--) {
+      var el = revealEls[i];
+      if (el.classList.contains('in')) { revealEls.splice(i, 1); continue; }
+      if (el.getBoundingClientRect().top < window.innerHeight - 40) show(el);
+    }
+  }
+
+  var io = null;
+  if ('IntersectionObserver' in window) {
+    io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) show(entry.target);
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -60px 0px' });
+    revealEls.forEach(function (el) { io.observe(el); });
+
+    var sweepScheduled = false;
+    window.addEventListener('scroll', function () {
+      if (sweepScheduled) return;
+      sweepScheduled = true;
+      window.requestAnimationFrame(function () { sweep(); sweepScheduled = false; });
+    }, { passive: true });
+    window.addEventListener('resize', sweep, { passive: true });
+    window.addEventListener('load', sweep);
+    sweep();
+  } else {
+    revealEls.forEach(function (el) { el.classList.add('in'); });
+  }
+})();
+</script>
+
+</body>
+</html>
